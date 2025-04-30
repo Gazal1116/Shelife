@@ -1,0 +1,257 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+    
+    header {
+    background-color: #cdcdcd;
+    color: #fffffff2;
+    padding: 1em;
+    text-align: center;
+    }
+    
+    nav ul {
+    font-size: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    }
+    nav li {
+    margin-right: 10px;
+    }
+    
+    nav a {
+    color: #241818;
+    text-decoration: none;
+    }
+    
+    nav a1{
+    font-size: 35px;
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+    }
+    .home {
+    background-image: linear-gradient(to bottom, #f7f7f7, #fff);
+    padding: 1em;
+    text-align: center;
+    }
+    
+    .home h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    }
+    
+    .home form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .home input[type="search"] {
+    padding: 10px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    }
+    
+    .home button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 0 10px
+    }
+    
+    /* Books */
+    
+    #featuredboooks{
+        width:100%;
+        height: 700px;
+        padding: 10px ;
+        margin-bottom: 15px;
+    }
+    
+    #featuredboooks h1{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        font-size: 45px;
+       
+    }
+    
+    #featuredboooks .featuredbox{
+        width: 80%;
+        height: 500px;
+        margin: auto ;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+        overflow: scroll;
+        padding:20px;
+    }
+    
+    #featuredboooks .featuredbox .featuredcard{
+        width: 220px;
+        height: 350px;
+        text-align: center;
+        padding: 25px;
+        border: 1px solid #070505;
+        margin:  auto  20px;
+    }
+    
+    #featuredboooks .featuredbox .featuredcard:hover{
+        box-shadow: 0 0 8px #027d83;
+    }
+    
+    #featuredboooks .featuredbox .featuredcard .featuredimg img{
+        width: 150px;
+        height: 200px;
+    }
+    
+    #featuredboooks .featuredbox .featuredcard .featuredtag .writer{
+        color: #040202;
+        font-size: 20px;
+    }
+    
+    #featuredboooks .featuredbox .featuredcard .featuredtag .categories{
+        color: rgb(7, 7, 7);
+        margin-top: 8px;
+        font-size: 15px;
+    }
+    
+    #featuredboooks .featuredbox .featuredcard .featuredtag .price{
+        margin-top: 8px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        font-size: 13px;
+    }
+    
+    #featuredboooks .featuredbox .featuredcard .featuredtag .price sub{
+        font-weight: 100px;
+        padding:  5px;
+        font-size: 10px;
+    }
+    
+    ::-webkit-scrollbar{
+        width: 10px;
+        height: 8px;
+    }
+    
+    
+    ::-webkit-scrollbar-thumb{
+        background:rgb(28, 150, 157);
+        border-radius: 10px;
+    }
+    
+    /* arrivals */
+    
+    .arrivals{
+    width: 100%;
+    height:100vh;
+    margin-bottom: 35px;
+    margin-left:-30px;
+    }
+    
+    .arrivals h1{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom:35px;
+    }
+    
+    .arrivals .arrivalbox{
+    width: 80%;
+    height:60vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 25px 0;
+    }
+    
+    .arrivals .arrivalbox .arrivalcard{
+    width: 220px;
+    height: 360px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #919191;
+    margin: auto 20px;
+    }
+    
+    
+    .arrivals .arrivalbox .arrivalcard:hover{
+    box-shadow: 0 0 8px #027d83;
+    }
+    
+    .arrivals .arrivalbox .arrivalcard .arrivalimage{
+    width:200px;
+    height: 300px;
+    margin: 0 auto;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    overflow: hidden;
+    }
+    
+    .arrivals .arrivalbox .arrivalcard .arrivalimage img{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+     transition: 0.3s; 
+    }
+    
+    .arrivals .arrivalbox .arrivalcard:hover .arrivalimage img{
+    transform: scale(1.1); 
+    }
+    
+    .arrivals .arrivalbox .arrivalcard .arrivalicon{
+    color: #089da1;
+    margin-bottom: 18px;
+    }
+    
+    .arrivals .arrivalbox .arrivalcard .arrivals_btn{
+    padding: 2px 10px;
+    border:1px solid #089da1;
+    text-decoration: none;
+    color:rgb(17, 16, 16);
+    }
+
+
+
+    /* responsive header */
+        
+    @media (max-width: 768px) {
+        nav ul {
+            font-size: 18px;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .home h2 {
+            font-size: 1.8em;
+        }
+    
+        .home input[type="search"] {
+            width: 150px;
+        }
+    }
+    
+    /* Mobile view */
+    @media (max-width: 480px) {
+        .home h2 {
+            font-size: 1.5em;
+        }
+    
+        .home input[type="search"] {
+            width: 120px;
+            font-size: 0.9em;
+        }
+    
+        .home button {
+            font-size: 0.9em;
+            padding: 0.5em;
+        }
+    }
+
+    

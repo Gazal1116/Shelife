@@ -1,0 +1,11 @@
+{
+  "name": "bookstore-website",
+  "version": "1.0.0",
+  "description": "Bookstore website",
+  "scripts": {
+    "start": "serve public"
+  },
+  "dependencies": {
+    "serve": "^14.2.1"
+  }
+} 

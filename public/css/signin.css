@@ -1,0 +1,42 @@
+body{
+    background-image:url("https://media.istockphoto.com/id/1061084856/photo/blur-school-library-or-study-room-with-book-shelves-for-education-background.jpg?s=170667a&w=0&k=20&c=ZfQiZ3tUQYNqyW2I8PX56K34waHeE44htK5AlONUEYA=");
+    background-size: cover;
+    background-repeat: no repeat;
+} 
+.container {
+    width: 400px;
+    margin:150px auto;
+    padding:5px;
+    border: 3px solid #131415;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container h1{
+    color:rgb(29, 72, 54);
+}
+
+
+
+.container input[type="text"], [type="password"],[type="email"] {
+    width: 75%;
+    padding: 7px;
+    margin-bottom: 10px;
+    border: 3px solid #9d9696;
+    border-radius: 10px;
+}
+
+
+
+.container button[type="submit"] {
+    width: 50%;
+    padding: 7px;
+    background-color: #0e1f2D;
+    color: #e1c5c5;
+    border: none;
+    border-radius: 5px;
+}
+
+.container button[type="submit"]:hover {
+    background-color: #b4b776;
+}

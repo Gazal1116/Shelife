@@ -1,0 +1,261 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.header{
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 16px;
+    margin-bottom: 0px;
+  
+}
+
+.header nav ul{
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    list-style: none;
+    margin: 0px;
+    padding: 0 px;
+}
+
+.header a{
+    text-decoration: none;
+    color: black;
+}
+
+.header nav ul li{
+    margin-top: 25px;
+    margin-right: 10px;
+}
+
+.header nav a1{
+    margin-top: 5px;
+    font-size: 45px;
+}
+
+.home{
+    background-image: linear-gradient(to bottom, #fbf7f7, #f9f3f3);
+    text-align: center;
+    color: black;
+    margin-top: 0px;
+    padding: 13px;
+
+}
+
+.home h2{
+    color: black;
+    font-size: 36px;
+    margin-top: 5px;
+}
+
+.home input[type="text"]{
+padding: 10px;
+border: none;
+border-radius: 10px 0 0 10 px;
+margin-bottom: 10px;
+font-size: 20px;
+margin-left: 0px;
+}
+
+button{
+background-color: black;
+color: rgb(247, 243, 243);
+font-size: 20px;
+cursor: pointer;
+margin-left: 0px;
+padding: 5px;
+}
+
+#featuredbooks h2{
+    text-align: center;
+    font-size: 45px;
+}
+
+.featuredbox{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    overflow: scroll;
+    margin-left: 170px;
+    width: 80%;
+}
+
+.book{
+    margin-right: 10px;
+    padding: 20px;
+    border: solid black;
+    width: 180px;
+    height: 245px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    border-radius: 5px;
+}
+
+.book:hover{
+    box-shadow: 0 0 8px #027d83;
+}
+
+.book img{
+    margin-left: 30px;
+width: 125px;
+height: 140px;
+}
+
+.book p{
+    font-size: 15px;
+    text-align: center;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 8px;
+}
+
+
+::-webkit-scrollbar-thumb{
+    background:rgb(28, 150, 157);
+    border-radius: 10px;
+}
+
+.newarrival h2{
+    text-align: center;
+}
+
+.newarrival{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr  ;
+    overflow: scroll;
+    margin-left: 170px;
+    width: 80%;
+}
+
+.newbook{
+    margin-right: 10px;
+    padding: 20px;
+    border: solid black;
+    width: 180px;
+    height: 245px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    border-radius: 5px;
+}
+.newbook:hover{
+    box-shadow: 0 0 8px #027d83;
+}
+.newbook img{
+    margin-left: 30px;
+width: 125px;
+height: 140px;
+transition: 0.3s;
+}
+.newbook img:hover{
+    transform: scale(1.4);
+   cursor: pointer;
+}
+
+.newbook p{
+    font-size: 15px;
+    text-align: center;}
+
+
+
+
+
+    @media (max-width: 768px) {
+        .header nav ul {
+            flex-direction: column;
+        }
+    
+        .home form {
+            flex-direction: column;
+            gap: 0.5em;
+        }
+    
+        .home form input[type="text"],
+        .home form button {
+            width: 100%;
+        }
+    
+        #featuredbooks h2 {
+            font-size: 1.5em;
+        }
+    
+        .featuredbox {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 1em;
+        }
+    
+        .book {
+            width: auto;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .header nav ul {
+            font-size: 0.9em;
+        }
+    
+        .home h2 {
+            font-size: 1.5em;
+        }
+    
+        .home form input[type="text"],
+        .home form button {
+            font-size: 0.9em;
+        }
+    
+        #featuredbooks h2 {
+            font-size: 1.3em;
+        }
+    
+        .book p {
+            font-size: 0.9em;
+        }
+    }    
+    
+
+
+
+
+    @media (max-width: 768px) {
+        .newarrival {
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            width: 95%;
+        }
+    
+        .newbook {
+            padding: 15px;
+        }
+    
+        .newbook img {
+            width: 100px;
+            height: 120px;
+        }
+    
+        .newbook p {
+            font-size: 14px;
+        }
+    }
+    
+    /* Mobile view adjustments */
+    @media (max-width: 480px) {
+        .newarrival1 h2 {
+            font-size: 1.5em;
+        }
+    
+        .newbook {
+            padding: 10px;
+        }
+    
+        .newbook img {
+            width: 90px;
+            height: 110px;
+        }
+    
+        .newbook p {
+            font-size: 13px;
+        }
+    }   

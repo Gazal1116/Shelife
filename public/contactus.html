@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <script>
+        let captchaNumber1;
+        let captchaNumber2;
+
+        function generateCaptcha() {
+            captchaNumber1 = Math.floor(Math.random() * 10); 
+            captchaNumber2 = Math.floor(Math.random() * 10); 
+            document.getElementById("captchaQuestion").innerText = `What is ${captchaNumber1} + ${captchaNumber2}?`;
+        }
+
+        function validateCaptcha() {
+            const userAnswer = parseInt(document.getElementById("captchaAnswer").value);
+            const correctAnswer = captchaNumber1 + captchaNumber2;
+
+            if (userAnswer === correctAnswer) {
+                alert("CAPTCHA is correct!");
+                return true; 
+            } else {
+                alert("Incorrect CAPTCHA. Please try again.");
+                return false;
+            }
+        }
+
+        window.onload = generateCaptcha; 
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: whitesmoke;
+            margin: 30px;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 50px;
+            background-color: snow;
+            
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color:chocolate;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form action="/submit_form" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="contact no">contact no:</label>
+            <input type="contact no" id="contact no " name="contact no" required>
+            
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <img src="https://img.icons8.com/?size=80&id=wWXjhreryCHQ&format=png">
+            <br>
+            <div class="captcha">
+                <span id="captchaQuestion"></span><br>
+                <input type="text" id="captchaAnswer" name="captchaAnswer" required>
+            </div>
+
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+
+

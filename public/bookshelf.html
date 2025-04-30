@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .book-list, .bookshelf {
+            width: 45%;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .book {
+            padding: 10px;
+            margin: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+        }
+        button {
+            padding: 5px 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .bookshelf .book {
+            background-color: #d1ecf1;
+
+        /* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .books-section,
+  .shelf-section {
+    min-width: 100%; /* Make sections take up full width */
+  }
+}    
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Personal Bookshelf</h1>
+    
+    <div class="container">
+        <div class="book-list">
+            <h2>Available Books</h2>
+            <div class="book" data-title="Book 1">
+                <span>The past is rising</span>
+                <button onclick="addToBookshelf('book 1')">Add to Shelf</button>
+            </div>
+            <div class="book" data-title="Book 2">
+                <span>the willian</span>
+                <button onclick="addToBookshelf('book 2')">Add to Shelf</button>
+            </div>
+            <div class="book" data-title="Book 3">
+                <span>Dune</span>
+                <button onclick="addToBookshelf('book 3')">Add to Shelf</button>
+            </div>
+            <div class="book" data-title="Book 3">
+                <span>conjurur</span>
+                <button onclick="addToBookshelf('book 4')">Add to Shelf</button>
+            </div>
+            <div class="book" data-title="Book 3">
+                <span>Where thwe life enters</span>
+                <button onclick="addToBookshelf('book 4')">Add to Shelf</button>
+            </div>
+        </div>
+
+    
+        <div class="bookshelf">
+            <h2>Your Bookshelf</h2>
+            <div id="shelf">
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function addToBookshelf(bookTitle) {
+            const shelf = document.getElementById('shelf');
+            
+            const bookDiv = document.createElement('div');
+            bookDiv.classList.add('book');
+            
+            bookDiv.innerHTML = `
+                <span>${bookTitle}</span>
+                <button onclick="removeFromBookshelf(this)">Remove</button>
+            `;
+            
+            shelf.appendChild(bookDiv);
+        }
+         function removeFromBookshelf(button) { 
+            const bookDiv = button.parentElement;
+            bookDiv.remove();
+        }
+    </script>
+    
+
+
+    
+
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-image: url(https://files.123freevectors.com/wp-content/original/121377-light-grey-abstract-texture-background.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+           
+        }
+
+        .auth1 h1 {
+            text-align: center;
+            color: rgb(17, 13, 13);
+            margin-bottom: 30px;
+            font-size: 60px;
+        }
+
+        .auth1 p {
+            text-align: center;
+            font-size: 20px;
+            margin: 15px;
+            margin-bottom: 100px;
+            color:rgb(151, 94, 94);
+        }
+
+        .authorbooks h2 {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .books {
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            overflow: scroll;
+        }
+
+        .bs {
+            margin-left: 30px;
+            margin-right: 25px;
+            padding: 20px;
+            border: 3px solid black;
+            margin-bottom: 40px;
+            width: 200px;
+            text-align: center;
+
+        }
+
+        .bs img {
+            border-radius: 5px;
+            width: 200px;
+            height: 200px;
+        }
+
+        .bs:hover {
+            box-shadow: 0 0 8px #027d83;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+            height: 8px;
+            margin-left: 25px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: black;
+            border-radius: 10px;
+        }
+ /* Responsive Design */
+ @media (max-width: 768px) {
+        .auth1 h1 {
+            font-size: 40px;
+        }
+
+        .auth1 p {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .authorbooks h2 {
+            font-size: 24px;
+        }
+
+        .books {
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        }
+
+        .bs {
+            padding: 15px;
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .auth1 h1 {
+            font-size: 30px;
+        }
+
+        .auth1 p {
+            font-size: 14px;
+        }
+
+        .bs {
+            padding: 10px;
+            font-size: 12px;
+        }
+    }
+</style>
+    </style>
+</head>
+
+<body>
+    <div class="auth1">
+        <h1>NIRAD C. CHAUDHURI</h1>
+        <p class="desc">He writes with equal flair in English and Bengali. His books are the foremost authority on the histories and
+            cultures of India during British colonialism. While working as an accountant in the Indian Army, he began
+            writing for popular magazines and newspapers. In 1951, his masterpiece The Autobiography of an Unknown
+            Indian was published which put him on the list of greatest Indian writers. The same book, due to its
+            controversial acknowledgement, ruined his life - he was terminated from Government service, deprived of his
+            pension and blacklisted as an author. His other notable works include The Continent of Circe, The
+            Intellectual in India, Hinduism: A Religion to Live By, Thy Hand, Great Anarch! and Culture in the Vanity
+            Bag.</p>
+    </div>
+
+    <div class="authorbooks">
+        <u>
+            <h2>Recommended Books</h2>
+        </u>
+        <div class="books">
+            <div class="bs">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1633297541i/744760.jpg"
+                    alt="book1" width="125px" height="130px">
+                <p>The Heart of India</p>
+            </div>
+            <div class="bs">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1203889806i/744751.jpg"
+                    alt="book1" width="125px" height="130px">
+                <p> Thy Hand, Great Anarch! India, 1921-1952</p>
+            </div>
+            <div class="bs">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1697907352i/744771.jpg"
+                    alt="book1" width="125px" height="130px">
+                <p>To Live or not to live</p>
+            </div>
+            <div class="bs">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1298603952i/631174.jpg"
+                    alt="book1" width="125px" height="130px">
+                <p> Three Horsemen of the New Apocalypse</p>
+            </div>
+            <div class="bs">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1426664696i/25166591.jpg"
+                    alt="book1" width="125px" height="130px">
+                <p>Culture in a Vainty Bag</p>
+            </div>
+            <div class="bs">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1699414798i/130597675.jpg"
+                    alt="book1" width="125px" height="130px">
+                <p> A Passage to England</p>
+            </div>
+            <div class="bs">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1696922483i/141639972.jpg"
+                    alt="book1" width="125px" height="130px">
+                <p>Clive of India</p>
+            </div>
+            <div class="bs">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1699160533i/176975887.jpg"
+                    alt="book1" width="125px" height="130px">
+                <p> The Autobiography of An Unknown Indian</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+

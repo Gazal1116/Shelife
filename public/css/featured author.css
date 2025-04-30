@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  header {
+    background: #b22222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  .authors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .author {
+    flex: 1 1 calc(25% - 1rem);
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .author img {
+    max-width: 30%;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .author h2 {
+    font-size: 1 rem;
+    margin: 0.5rem 0;
+  }
+  
+  .footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .footer div {
+    display: inline-block;
+    margin-right: 150px;
+    margin-left: 100px;
+  }
+
+  .footer h4 {
+    margin-bottom: 10px;
+    color: #a83232;
+  }
+
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer ul li {
+    margin-bottom: 5px;
+  }
+
+  .footer ul li a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .footer ul li a:hover {
+    text-decoration: underline;
+  }
+  .social-icons {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .social-icons a {
+    text-decoration: none;
+    color: #fff;
+    background-color: blue;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: background-color 0.3s;
+  }
+
+  .social-icons a:hover {
+    background-color: #8e2929;
+  }
+
+  .copyright {
+    margin-top: 10px;
+    font-size: 17px;
+    color: #777;
+    text-align: center;
+  }

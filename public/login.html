@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script>
+        function validateForm() {
+            var email = document.forms["loginForm"]["my_email"].value;
+            var password = document.forms["loginForm"]["pwd"].value;
+
+            if (email == "" || password == "") {
+                alert("Both email and password are required!");
+                return false; 
+            }
+            return true; 
+        }
+    </script>
+</head>
+<body>
+    <div class="whole">
+        <div class="photo">
+            <img src="assets/images/logoo.webp" alt="login page">
+        </div>
+          
+        <div class="main">
+            <div class="material">
+                <h1>Welcome back:)</h1>
+                <p>To keep connected with us please login with your personal<br> information by email address and password</p>
+            </div>
+            <div class="form">
+                <form name="loginForm" action="homepage.html" method="GET" onsubmit="return validateForm()">
+                    <input type="email" placeholder="Email Address" name="my_email" maxlength="70">
+            </div>
+            <br>
+            <div class="input">
+                <input type="password" placeholder="Password" name="pwd">
+            </div>
+            <div class="a1">
+                <div class="remember pass">
+                    <input type="checkbox"> Remember Me
+                </div>
+                <button type="submit">Login</button>
+            </div>
+            </form>
+                
+            <div class="social">
+                <p>Or can you join with</p>
+                <div class="icons">
+                    <a href="#"> <img src="https://cdn2.hubspot.net/hubfs/53/image8-2.jpg" alt="Google" width="40px" height="40px"></a>
+                    <a href="#"> <img src="https://www.wavetransit.com/wp-content/uploads/2021/08/Facebook-logo.png" alt="Facebook" width="40px" height="40px"></a>
+                    <a href="#"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVZUuYqUqbnHPYhvyrPrwq0_czHMaMEb9Brw&s" alt="Twitter" width="40px" height="40px"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+

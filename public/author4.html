@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * {
+            background-image: url(https://files.123freevectors.com/wp-content/original/121377-light-grey-abstract-texture-background.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-color: rgb(174, 160, 144);
+        }
+
+        .auth1 h1 {
+            text-align: center;
+            color: rgb(17, 13, 13);
+            margin-bottom: 30px;
+            font-size: 60px;
+        }
+
+        .auth1 p {
+            text-align: center;
+            font-size: 20px;
+            margin: 15px;
+            margin-bottom: 100px;
+            color:rgb(151, 94, 94);
+        }
+
+        .authorbooks h2 {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .books {
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            overflow: scroll;
+        }
+
+        .bs {
+            margin-left: 30px;
+            margin-right: 25px;
+            padding: 20px;
+            border: 3px solid black;
+            margin-bottom: 40px;
+            width: 200px;
+            text-align: center;
+
+        }
+
+        .bs img {
+            border-radius: 5px;
+            width: 200px;
+            height: 200px;
+        }
+
+        .bs:hover {
+            box-shadow: 0 0 8px #027d83;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+            height: 8px;
+            margin-left: 25px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: black;
+            border-radius: 10px;
+        }
+       /* Responsive Design */
+    @media (max-width: 768px) {
+        .auth1 h1 {
+            font-size: 40px;
+        }
+
+        .auth1 p {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .authorbooks h2 {
+            font-size: 24px;
+        }
+
+        .books {
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        }
+
+        .bs {
+            padding: 15px;
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .auth1 h1 {
+            font-size: 30px;
+        }
+
+        .auth1 p {
+            font-size: 14px;
+        }
+
+        .bs {
+            padding: 10px;
+            font-size: 12px;
+        }
+    }
+</style>
+    </style>
+</head>
+
+<body>
+    <div class="auth1">
+        <h1>MANOHAR MALGONKAR</h1>
+        <p class="desc">A contemporary of R.K. Narayan and Mulk Raj Anand, Manohar Malgonkar is largely ignored in spite of his stellar contribution to Indian writing in English. At a time when mysteries and thrillers were not very well-read in India, Manohar pioneered the genre and contributed immensely to it with books like Spy in Amber, A Bend in the Ganges, Bandicoot Run, Cactus Country, etc. If he were writing today, he would surely be an international name in the mystery and thriller genres, writing and competing with the likes of Jeffrey Archer, Clive Cussler, and James Patterson.</p>
+    </div>
+
+    <div class="authorbooks">
+        <u><h2>Recommended Books</h2></u>
+        <div class="books">
+            <div class="bs">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1332770875i/2208934.jpg" alt="book1" width="125px" height="130px">
+                <p>Men Who Killed Gandhi</p>
+            </div>
+            <div class="bs">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1190998429i/1966112.jpg" alt="book1" width="125px" height="130px">
+                <p>A Bend in the Ganges
+
+                </p>
+            </div>
+            <div class="bs">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1342742774i/8687957.jpg" alt="book1" width="125px" height="130px">
+                <p>The Princes</p>
+            </div>
+            <div class="bs">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1388558249i/20408795.jpg" alt="book1" width="125px" height="130px">
+                <p>Spy in Amber</p>
+            </div>
+            <div class="bs">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1392355259i/2517506.jpg" alt="book1" width="125px" height="130px">
+                <p>Combat of Shadows</p>
+            </div>
+            <div class="bs">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1409499341i/23128561.jpg" alt="book1" width="125px" height="130px">
+                <p>The Garland Keepers</p>
+            </div>
+            <div class="bs">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1661293303i/15460477.jpg" alt="book1" width="125px" height="130px">
+                <p>Bandicoot Run</p>
+            </div>
+            <div class="bs">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1664003859i/1675282.jpg" alt="book1" width="125px" height="130px">
+                <p>Dropping names</p>
+            </div>
+            <div class="bs">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1699774482i/59462399.jpg" alt="book1" width="125px" height="130px">
+                <p>A Toast in Warm Wine</p>
+            </div>
+            <div class="bs">
+                <img src="https://th.bing.com/th/id/OIP.FUGsdI5bHYmU6bPhFkIFDQAAAA?rs=1&pid=ImgDetMain" alt="book1" width="125px" height="130px">
+                <p>Cactus Country</p>
+            </div>
+            <div class="bs">
+                <img src="https://th.bing.com/th/id/OIP.5kaN5XY2EHIMVk5JUGn9dQHaLu?rs=1&pid=ImgDetMain" alt="book1" width="125px" height="130px">
+                <p>The Puars of Dewas Senior.</p>
+            </div>
+            
+</body>
+
+</html>
+
+
+
+
+

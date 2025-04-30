@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-image: url(https://files.123freevectors.com/wp-content/original/121377-light-grey-abstract-texture-background.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .auth1 h1 {
+            text-align: center;
+            color: rgb(7, 2, 2);
+            margin-bottom: 30px;
+            font-size: 60px;
+        }
+
+        .auth1 p {
+            text-align: center;
+            font-size: 20px;
+            margin: 15px;
+            margin-bottom: 100px;
+            color: rgb(151, 94, 94);
+        }
+
+        .authorbooks h2 {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .books {
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            overflow: scroll;
+        }
+
+        .bs {
+            margin-left: 30px;
+            margin-right: 25px;
+            padding: 20px;
+            border: 3px solid black;
+            margin-bottom: 40px;
+            width: 200px;
+            text-align: center;
+
+        }
+
+        .bs img {
+            border-radius: 5px;
+            width: 200px;
+            height: 200px;
+        }
+
+        .bs:hover {
+            box-shadow: 0 0 8px #027d83;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+            height: 8px;
+            margin-left: 25px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: black;
+            border-radius: 10px;
+        }
+
+         /* Responsive Design */
+    @media (max-width: 768px) {
+        .auth1 h1 {
+            font-size: 40px;
+        }
+
+        .auth1 p {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .authorbooks h2 {
+            font-size: 24px;
+        }
+
+        .books {
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        }
+
+        .bs {
+            padding: 15px;
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .auth1 h1 {
+            font-size: 30px;
+        }
+
+        .auth1 p {
+            font-size: 14px;
+        }
+
+        .bs {
+            padding: 10px;
+            font-size: 12px;
+        }
+    }
+</style>
+        
+    </style>
+
+
+</head>
+
+
+<body>
+
+    <div class="auth1">
+        <h1>RK-NARAYAN</h1>
+        <p class="desc">
+            Unarguably the best and foremost Indian writer in English, R.K. Narayan’s novels, and short stories are the
+            reasons why common middle-class Indians developed an interest in English stories. Best known for the
+            fictional town of Malgudi, Narayan has written many fiction bs including Swami and Friends, The Guide, A
+            Tiger for Malgud”, The English Teacher, etc. His most famous and most sold book is his collection of short
+            stories – Malgudi Days. His is a name which you will find on any list of “Best Indian Authors”.
+        </p>
+    </div>
+
+    <div class="authorbooks">
+        <u>
+            <h2>Recommended Books</h2>
+        </u>
+        <div class="books">
+            <div class="bs">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1644689955i/14082.jpg"
+                    alt="book1" width="125px" height="130px">
+                <p>Malgudi days</p>
+            </div>
+            <div class="bs">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1328872382i/732482.jpg"
+                    alt="book2" width="125px" height="130px">
+                <p>Swami and Friends</p>
+            </div>
+            <div class="bs">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1500848120i/196743.jpg"
+                    alt="book3" width="125px" height="130px">
+                <p>The English Teacher</p>
+            </div>
+            <div class="bs">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1644689237i/676921.jpg"
+                    alt="book4" width="125px" height="130px">
+                <p>The Man-Eater of Malgudi </p>
+            </div>
+            <div class="bs">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1328872383i/1007172.jpg"
+                    alt="book5" width="125px" height="130px">
+                <p>The Bachelor of Arts</p>
+            </div>
+            <div class="bs">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1356458165i/113126.jpg"
+                    alt="book6" width="125px" height="130px">
+                <p>The Vendor of Sweets</p>
+            </div>
+            <div class="bs">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1385176021i/18724.jpg"
+                    alt="book7" width="125px" height="130px">
+                <p>The Painter of Signs</p>
+            </div>
+            <div class="bs">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1328872384i/108540.jpg"
+                    alt="book8" width="125px" height="130px">
+                <p>The Dark Room
+                </p>
+            </div>
+            <div class="bs">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1355107352i/129865.jpg"
+                    alt="book9" width="125px" height="130px">
+                <p>Under the Banyan Tree
+                </p>
+            </div>
+            <div class="bs">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1188394539i/1790301.jpg"
+                    alt="book10" width="125px" height="130px">
+                <p>World Of Nagaraj</p>
+            </div>
+            <div class="bs">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1353333134i/16159042.jpg"
+                    alt="book11" width="125px" height="130px">
+                <p>Grandmother's Tale</p>
+            </div>
+            <div class="bs">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1365323146i/1225670.jpg"
+                    alt="book12" width="125px" height="130px">
+                <p> A horse and two goats Stories</p>
+            </div>
+            <div class="bs">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1201500361i/2682894.jpg"
+                    alt="book13" width="125px" height="130px">
+                <p>Salt and Sawdust</p>
+            </div>
+            <div class="bs">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1254506868i/1664691.jpg"
+                    alt="book14" width="125px" height="130px">
+                <p>My Dateless Diary: An American Journey</p>
+            </div>
+            <div class="bs">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1311253838i/4497182.jpg"
+                    alt="book15" width="125px" height="130px">
+                <p>The Indian Epics Retold</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+

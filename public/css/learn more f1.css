@@ -1,0 +1,161 @@
+.container{
+
+    display: flex;
+    align-items: center;
+    
+}
+
+.image{
+    margin-left: 30px;
+    margin-top: 35px;
+  
+}
+
+.a1{
+    margin-top: 30px;
+}
+
+h1{
+    margin-left: 140px;
+    margin-top: 65px;
+    font-size: 45px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 2.5px;
+    
+}
+
+p1{
+    margin-left: 140px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+.star{margin-left: 140px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.checked {
+    color: orange;
+  }
+
+.about{
+  
+    width: 800px;
+    margin-left: 140px;
+
+}  
+
+.img2{
+    margin-bottom: 15px;
+}
+
+button{
+
+}
+
+.review-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.star-rating {
+    display: flex;
+    cursor: pointer;
+}
+
+.star {
+    font-size: 30px;
+    color: #ddd;
+}
+
+.star.selected,
+.star:hover,
+.star:hover ~ .star {
+    color: gold;
+}
+
+textarea {
+    width: 100%;
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.img2:hover {
+    transform: scale(1.1);
+}
+
+.btn-outline-success {
+    margin-top: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+
+.main h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .image {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .a1 {
+        text-align: left;
+    }
+
+    .main h1 {
+        font-size: 3em;
+    }
+
+    .star {
+        text-align: left;
+    }
+
+    .about {
+        text-align: left;
+    }
+}
