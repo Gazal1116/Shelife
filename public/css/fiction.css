@@ -14,7 +14,7 @@ body {
     z-index: 1000; /* Ensures it stays above other content */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for better visibility */
 }
-//mjhghh//
+
  .top-bar {
     display: flex;
     justify-content: center; /* Center the text */
