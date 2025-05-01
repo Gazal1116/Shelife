@@ -85,7 +85,7 @@ body {
     
     #featuredboooks .featuredbox{
         width: 80%;
-        height: 500px;
+        height: 501px;
         margin: auto ;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
