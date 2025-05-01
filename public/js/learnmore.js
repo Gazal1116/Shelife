@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
         star.addEventListener("click", () => {
             rating = star.getAttribute("data-value");
             updateStars();
-        });
+        });//mjhn//
     });
 
     function updateStars() {
